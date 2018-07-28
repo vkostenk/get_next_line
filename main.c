@@ -6,13 +6,17 @@
 /*   By: vkostenk <vkostenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/24 12:28:29 by vkostenk          #+#    #+#             */
-/*   Updated: 2018/07/24 16:03:30 by vkostenk         ###   ########.fr       */
+/*   Updated: 2018/07/25 16:49:38 by vkostenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include <stdio.h>
+#include <fcntl.h>
+#include <sys/uio.h>
+#include <sys/types.h>
 
-int int main(int argc, char const **argv)
+int main(int argc, char const **argv)
 {
   int fd;
   char	*line;
@@ -30,5 +34,4 @@ int int main(int argc, char const **argv)
 	}
 	if (argc == 2)
 		close(fd);
-}
 }
